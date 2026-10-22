@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-label="رسم تجريبي">
+  <rect width="640" height="720" fill="#F7E0C8"/>
+  <rect x="28" y="28" width="584" height="664" fill="none" stroke="#6A3418" stroke-width="10"/>
+  <text x="52" y="78" fill="#6A3418" font-family="Tahoma, Arial, sans-serif" font-size="28" font-weight="700">رسم تجريبي</text>
+  <text x="430" y="78" fill="#6A3418" font-family="Tahoma, Arial, sans-serif" font-size="28">لوحدي</text>
+  <circle cx="170" cy="250" r="36" fill="#fffaf3" stroke="#6A3418" stroke-width="7"/><circle cx="470" cy="250" r="36" fill="#fffaf3" stroke="#6A3418" stroke-width="7"/><rect x="250" y="470" width="140" height="16" fill="#6A3418"/>
+  <circle cx="320" cy="300" r="108" fill="#FFF9F2" stroke="#241711" stroke-width="8"/>
+  <path d="M236 228l48 16M404 228l-48 16" stroke="#241711" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="268" cy="262" r="10" fill="#241711"/><circle cx="372" cy="262" r="10" fill="#241711"/>
+  <ellipse cx="232" cy="308" rx="18" ry="10" fill="#E07A7A" opacity="0.8"/><ellipse cx="408" cy="308" rx="18" ry="10" fill="#E07A7A" opacity="0.8"/>
+  <path d="M286 324c20 8 48 18 70 4" fill="none" stroke="#241711" stroke-width="8" stroke-linecap="round"/>
+  <path d="M430 214c10 18 10 28 0 40c12-12 18-24 0-40z" fill="#7EB6D6"/>
+  <path d="M250 408c40 70 100 70 140 0" fill="none" stroke="#241711" stroke-width="8"/>
+  <text x="52" y="660" fill="#6A3418" font-family="Tahoma, Arial, sans-serif" font-size="22">ليس ميمًا حقيقيًا</text>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-label="رسم تجريبي">
+  <rect width="640" height="720" fill="#D7EBD9"/>
+  <rect x="28" y="28" width="584" height="664" fill="none" stroke="#1D5A38" stroke-width="10"/>
+  <text x="52" y="78" fill="#1D5A38" font-family="Tahoma, Arial, sans-serif" font-size="28" font-weight="700">رسم تجريبي</text>
+  <text x="430" y="78" fill="#1D5A38" font-family="Tahoma, Arial, sans-serif" font-size="28">خبر</text>
+  <path d="M500 120l14 36h38l-30 22 12 36-34-22-34 22 12-36-30-22h38z" fill="#E3B341"/>
+  <circle cx="320" cy="300" r="108" fill="#FFF9F2" stroke="#241711" stroke-width="8"/>
+  <path d="M238 232h50M352 232h50" stroke="#241711" stroke-width="7" stroke-linecap="round"/>
+  <path d="M250 250c12 16 28 16 40 0M350 250c12 16 28 16 40 0" fill="none" stroke="#241711" stroke-width="8" stroke-linecap="round"/>
+  
+  <path d="M286 330c18 28 50 28 68 0" fill="none" stroke="#241711" stroke-width="8" stroke-linecap="round"/>
+  
+  <path d="M250 408c40 70 100 70 140 0" fill="none" stroke="#241711" stroke-width="8"/>
+  <text x="52" y="660" fill="#1D5A38" font-family="Tahoma, Arial, sans-serif" font-size="22">ليس ميمًا حقيقيًا</text>
+</svg>

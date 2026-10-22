@@ -1,0 +1,33 @@
+{
+  "name": "msh-faker-mems",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Find an existing Egyptian meme for a situation described in Egyptian Arabic.",
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:shared": "npm run dev -w @msh/shared",
+    "dev:api": "npm run dev -w @msh/api",
+    "dev:web": "npm run dev -w @msh/web",
+    "build:server": "npm run build -w @msh/shared && npm run build -w @msh/api",
+    "build": "npm run build -w @msh/shared && npm run build -w @msh/api && npm run build -w @msh/web",
+    "start": "npm run start -w @msh/api",
+    "test": "npm run test -w @msh/shared && npm run test -w @msh/api && npm run test -w @msh/web",
+    "typecheck": "npm run build -w @msh/shared && npm run typecheck -w @msh/api && npm run typecheck -w @msh/web",
+    "lint": "eslint .",
+    "demo-art": "node scripts/render-demo-art.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.29.1"
+  }
+}

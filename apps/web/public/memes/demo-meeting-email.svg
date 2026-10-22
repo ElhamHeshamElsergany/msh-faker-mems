@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 720" role="img" aria-label="رسم تجريبي">
+  <rect width="640" height="720" fill="#E7DCC8"/>
+  <rect x="28" y="28" width="584" height="664" fill="none" stroke="#3E3428" stroke-width="10"/>
+  <text x="52" y="78" fill="#3E3428" font-family="Tahoma, Arial, sans-serif" font-size="28" font-weight="700">رسم تجريبي</text>
+  <text x="430" y="78" fill="#3E3428" font-family="Tahoma, Arial, sans-serif" font-size="28">إيميل</text>
+  <rect x="150" y="470" width="340" height="16" rx="6" fill="#3E3428"/><circle cx="190" cy="430" r="22" fill="#fffaf3" stroke="#3E3428" stroke-width="6"/><circle cx="250" cy="418" r="22" fill="#fffaf3" stroke="#3E3428" stroke-width="6"/><circle cx="450" cy="430" r="22" fill="#fffaf3" stroke="#3E3428" stroke-width="6"/>
+  <circle cx="320" cy="300" r="108" fill="#FFF9F2" stroke="#241711" stroke-width="8"/>
+  <path d="M238 232h50M352 232h50" stroke="#241711" stroke-width="7" stroke-linecap="round"/>
+  <path d="M246 268h48M346 268h48" stroke="#241711" stroke-width="8" stroke-linecap="round"/>
+  
+  <path d="M292 332h46" stroke="#241711" stroke-width="8" stroke-linecap="round"/>
+  
+  <path d="M250 408c40 70 100 70 140 0" fill="none" stroke="#241711" stroke-width="8"/>
+  <text x="52" y="660" fill="#3E3428" font-family="Tahoma, Arial, sans-serif" font-size="22">ليس ميمًا حقيقيًا</text>
+</svg>
