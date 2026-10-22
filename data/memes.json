@@ -1,5 +1,27 @@
 [
   {
+    "id": "verified-mubarak-knockout",
+    "label": "نوك آوت التنحي",
+    "imagePath": "memes/verified/mubarak-knockout.gif",
+    "characterName": "حسني مبارك",
+    "sourceTitle": "Mubarak Knockout",
+    "originalContext": "كاريكاتير بتاريخ 11 فبراير 2011 بعنوان Mubarak Knockout، يوم تنحي حسني مبارك. رسمه كارلوس لاتوف ونشره في الملكية العامة.",
+    "keywords": ["مبارك", "حسني مبارك", "تنحي", "يتنحي", "مبارك يتنحي", "ثوره", "يناير", "نوك اوت"],
+    "categories": ["social"],
+    "reactions": ["shock", "happiness"],
+    "exampleCaptions": [
+      "يا نهار، التنحي حصل بجد؟",
+      "الضربة دي خلصت اليوم",
+      "الناس لسه مش مصدقة"
+    ],
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Feb11_VICTORY_Mubarak_Knockout_1.gif",
+    "attribution": "كارلوس لاتوف، منشور في الملكية العامة على ويكيميديا كومنز.",
+    "license": "Public domain — Carlos Latuff",
+    "allowDownload": true,
+    "verificationStatus": "verified",
+    "disclaimer": "كاريكاتير حقيقي من 11 فبراير 2011، مش لقطة فيلم. الرسم لكارلوس لاتوف ومنشور في النطاق العام."
+  },
+  {
     "id": "demo-last-minute-edit",
     "label": "تعديل اللحظة الأخيرة",
     "imagePath": "memes/demo-last-minute-edit.svg",

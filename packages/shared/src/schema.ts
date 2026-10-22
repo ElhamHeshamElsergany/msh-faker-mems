@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { CATEGORY_IDS, REACTION_IDS, SOURCE_IDS } from './taxonomy.js'
 import type { MemeRecord } from './types.js'
 
-const localImage = /^memes\/[a-z0-9/-]+\.(svg|png|webp|jpg|jpeg)$/
+const localImage = /^memes\/[a-z0-9/-]+\.(svg|png|webp|jpg|jpeg|gif)$/
 const remoteImage = /^https:\/\/\S+$/
 
 export const memeSchema = z

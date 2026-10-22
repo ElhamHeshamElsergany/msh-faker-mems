@@ -87,3 +87,7 @@ export interface TaxonomyResponse {
 export function getTaxonomy(): Promise<TaxonomyResponse> {
   return request<TaxonomyResponse>('/api/categories')
 }
+
+export function getTrending(): Promise<{ basis: string; note: string; items: MemeRecord[] }> {
+  return request('/api/memes/trending')
+}

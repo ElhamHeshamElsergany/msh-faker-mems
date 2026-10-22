@@ -10,6 +10,7 @@ import type { MemeRecord } from '@msh/shared'
 
 vi.mock('../api/client', () => ({
   searchMemes: vi.fn(),
+  getTrending: vi.fn().mockResolvedValue({ basis: 'dataset-order', note: '', items: [] }),
 }))
 
 import { searchMemes } from '../api/client'

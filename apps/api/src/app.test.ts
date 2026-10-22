@@ -104,7 +104,9 @@ describe('repository contract', () => {
   it('reads the seed dataset through the json repository', async () => {
     const memes = await repository.list()
     const sample: MemeRecord | undefined = memes[0]
-    expect(sample?.verificationStatus).toBe('demo')
+    expect(sample?.id).toBe('verified-mubarak-knockout')
+    expect(sample?.verificationStatus).toBe('verified')
+    expect(sample?.sourceUrl).toContain('commons.wikimedia.org')
     expect(await repository.getById('missing')).toBeNull()
   })
 })

@@ -17,6 +17,7 @@ export const EXAMPLES = [
   'بعت الرسالة في الشات الغلط',
   'الرسالة متشافة على الواتساب من غير رد',
   'الاجتماع كان ممكن يبقى إيميل',
+  'لما مبارك يتنحي والناس لسه مش مصدقة',
 ]
 
 export function confidenceLabel(level: 'low' | 'medium' | 'high'): string {

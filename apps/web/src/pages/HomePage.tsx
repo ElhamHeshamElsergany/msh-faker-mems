@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import type { CategoryId, ReactionId, SourceId } from '@msh/shared'
+import type { CategoryId, MemeRecord, ReactionId, SourceId } from '@msh/shared'
+import { getTrending } from '../api/client'
 import { ExampleChips } from '../components/ExampleChips'
 import { FilterBar } from '../components/FilterBar'
 import { MemeCard } from '../components/MemeCard'
@@ -19,6 +20,22 @@ export function HomePage() {
   const [searched, setSearched] = useState(false)
   const { status, response, error, search } = useMemeSearch()
   const favorites = useFavorites()
+  const [verified, setVerified] = useState<MemeRecord[]>([])
+
+  useEffect(() => {
+    let active = true
+    getTrending()
+      .then((payload) => {
+        if (!active) return
+        setVerified(payload.items.filter((item) => item.verificationStatus === 'verified'))
+      })
+      .catch(() => {
+        if (active) setVerified([])
+      })
+    return () => {
+      active = false
+    }
+  }, [])
 
   function run(nextQuery: string, next = { categories, reactions, sources }) {
     const trimmed = nextQuery.trim()
@@ -58,7 +75,7 @@ export function HomePage() {
         <aside className="rounded-3xl border-[3px] border-ink bg-palm px-5 py-5 text-sand-50 shadow-hard">
           <p className="text-sm font-bold text-sand-200">ملاحظة صادقة</p>
           <p className="mt-2 text-lg font-extrabold leading-8">
-            البذرة الحالية رسوم تجريبية عشان البحث يشتغل. لما يتضاف ميم متحقق، نفس الشاشة هتعرضه هو بس.
+            في كاريكاتير واحد متحقق من 11 فبراير 2011، وترخيصه نطاق عام. باقي الرسوم لسه تجريبية، ومفيش لقطات أفلام.
           </p>
         </aside>
       </section>
@@ -70,6 +87,25 @@ export function HomePage() {
           run(value)
         }}
       />
+
+      {verified.length > 0 ? (
+        <section className="space-y-4">
+          <h2 className="text-3xl font-extrabold">ميم متحقق</h2>
+          <p className="max-w-2xl leading-8 text-ink-soft">
+            الصورة دي كاريكاتير حقيقي، مش رسم التجربة. المصدر والترخيص موجودين في صفحة التفاصيل.
+          </p>
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+            {verified.map((meme) => (
+              <MemeCard
+                key={meme.id}
+                meme={meme}
+                saved={favorites.has(meme.id)}
+                onToggleSave={() => favorites.toggle(meme, meme.exampleCaptions[0] ?? '')}
+              />
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section aria-live="polite" className="space-y-4">
         <div className="flex flex-wrap items-end justify-between gap-3">

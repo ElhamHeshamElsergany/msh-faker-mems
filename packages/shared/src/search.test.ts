@@ -44,6 +44,13 @@ describe('searchMemes', () => {
     expect(new Set(ids).size).toBe(ids.length)
   })
 
+  it('finds the verified 11 February cartoon by its real context', () => {
+    const top = searchMemes(memes, 'لما مبارك يتنحي والناس لسه مش مصدقة').results[0]
+    expect(top?.meme.id).toBe('verified-mubarak-knockout')
+    expect(top?.meme.verificationStatus).toBe('verified')
+    expect(top?.meme.sourceUrl).toContain('commons.wikimedia.org')
+  })
+
   it('finds studying, family, and chat situations', () => {
     expect(searchMemes(memes, 'لما حد يسألني ذاكرت ولا لسه وأنا مفتحتش الكتاب').results[0]?.meme.id).toBe(
       'demo-closed-book',
@@ -58,8 +65,11 @@ describe('searchMemes', () => {
     expect(outcome.emptyReason).toBe('low-confidence')
   })
 
-  it('respects a source filter that excludes the whole catalog', () => {
-    const outcome = searchMemes(memes, 'تعديل بسيط من المدير', { sources: ['verified'] })
+  it('respects a filter that excludes the whole catalog', () => {
+    const outcome = searchMemes(memes, 'تعديل بسيط من المدير', {
+      categories: ['work'],
+      reactions: ['happiness'],
+    })
     expect(outcome.results).toEqual([])
     expect(outcome.emptyReason).toBe('filters')
   })

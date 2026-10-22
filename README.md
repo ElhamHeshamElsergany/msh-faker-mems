@@ -11,7 +11,7 @@ Egyptian Meme Finder is a small TypeScript monorepo: an Arabic RTL React app and
 - Optional server-side OpenAI classification. If `OPENAI_API_KEY` is missing, responses say the engine is `local`.
 - A repository interface with a JSON implementation and an optional Supabase loader.
 
-The seed records in `data/memes.json` are `verificationStatus: "demo"`. Their images are original SVG drawings in `apps/web/public/memes`, licensed CC0 in the record metadata. They are not screenshots from movies, TV, or social media, and the UI labels them as تجربة.
+Most seed records are `verificationStatus: "demo"`: original SVG drawings, labeled تجربة, with no person or film attached. One verified record is Carlos Latuff's public-domain cartoon [Mubarak Knockout](https://commons.wikimedia.org/wiki/File:Feb11_VICTORY_Mubarak_Knockout_1.gif) from 11 February 2011. It is not a movie still. Film screenshots are not added unless their license and source are checked.
 
 ## Repository layout
 
